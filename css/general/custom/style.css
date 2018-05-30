@@ -17,6 +17,10 @@
 	width: 100%;
 }
 
+a, a:link, a:visited, a:hover {
+	text-decoration: none;
+}
+
 #goHome {
 	position: fixed;
 	bottom: 15%;
