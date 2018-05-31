@@ -7,6 +7,8 @@
 
 	function resize() {
 		width = window.innerWidth;
+		height = window.innerHeight;
+		$(".mainContain").css("height", height);
 
 		if (width != ori_width) {
 			if (width > 767) {
