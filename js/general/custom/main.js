@@ -7,8 +7,13 @@
 
 	function resize() {
 		width = window.innerWidth;
-		height = $(document).innerHeight;
-		$(".mainContain").css("height", height);
+
+		$(".mainContain").css("height","auto");
+		if($(window).height() > $(".mainContain").css("height").substring(0, $(".mainContain").css("height").indexOf("px"))) {
+			var setheight = $(window).height() - 71;
+			$(".mainContain").css("height", setheight);
+			$(".mainContain").css("padding-buttom", "50px");
+		}
 
 		if (width != ori_width) {
 			if (width > 767) {
