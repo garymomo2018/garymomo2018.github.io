@@ -23,7 +23,7 @@ a, a:link, a:visited, a:hover {
 
 #goHome {
 	position: fixed;
-	bottom: 20px;
+	bottom: 15%;
 	right: 0px;
 	width: 100px;
 	background-color: red;
