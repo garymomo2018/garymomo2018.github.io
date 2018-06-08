@@ -8,23 +8,25 @@ body {
 	overflow: hidden;
 }
 
-#indexBK {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: -1;
-	height: 100%;
-	width: 100%;
+.arrow {
+	text-align: center;
+}
+#arrowBody {
+	width: 60%;
+	height: 500px;
+}
+#arrowHead {
+	width:95%;
+}
+
+.actions {
+	text-align: center;
+}
+.actions div {
+	background-color: green;
+	border-radius: 3px;
 }
 
 a, a:link, a:visited, a:hover {
 	text-decoration: none;
-}
-
-#goHome {
-	position: fixed;
-	bottom: 15%;
-	right: 0px;
-	width: 100px;
-	background-color: red;
 }

@@ -7,6 +7,7 @@ document.writeln("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/b
 //custom
 document.writeln("<link rel='stylesheet' href='css/general/custom/style.css' />");
 document.writeln("<link rel='stylesheet' href='css/general/custom/nav.css' />");
+document.writeln("<link rel='stylesheet' href='css/general/custom/footOp.css' />");
 document.writeln("<link rel='stylesheet' href='css/general/custom/foot.css' />");
 
 // FONT
