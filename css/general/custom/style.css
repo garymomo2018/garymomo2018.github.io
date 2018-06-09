@@ -22,11 +22,16 @@ body {
 .actions {
 	text-align: center;
 }
-.actions div {
+.actions .items {
 	background-color: green;
 	border-radius: 3px;
 }
 
 a, a:link, a:visited, a:hover {
 	text-decoration: none;
+}
+
+.datatime {
+	text-align:center;
+	background-color: yellow;
 }
