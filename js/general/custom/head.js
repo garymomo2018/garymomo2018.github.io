@@ -9,6 +9,7 @@ document.writeln("<link rel='stylesheet' href='css/general/custom/style.css' />"
 document.writeln("<link rel='stylesheet' href='css/general/custom/nav.css' />");
 document.writeln("<link rel='stylesheet' href='css/general/custom/footOp.css' />");
 document.writeln("<link rel='stylesheet' href='css/general/custom/foot.css' />");
+document.writeln("<link rel='stylesheet' href='css/general/custom/actions.css' />");
 
 // FONT
 document.writeln("<link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet'>");

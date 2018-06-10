@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+.actions {
+	text-align: center;
+}
+.actions .items {
+	margin: 1rem auto 0.5rem;
+	width: 90%;
+	border-radius: 3px;
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 800;
+	background-color: green;
+}
+
+#it5 {
+	background-color: #cc3333;
+}
+#it6 {
+	background-color: #9933cc;
+}
+#it7 {
+	background-color: #cc3399;
+}
+#it8 {
+	background-color: #cccc33;
+}
+#it9 {
+	background-color: #ffffff;
+}
+
+.datatime {
+	color: #9933cc;
+	text-align: center;
+	text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 800;
+	background-color: #888888;
+	border-radius: 3px;
+	border: 2px solid #9933cc;
+}

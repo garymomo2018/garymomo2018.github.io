@@ -13,25 +13,11 @@ body {
 }
 #arrowBody {
 	width: 60%;
-	height: 500px;
 }
 #arrowHead {
 	width:95%;
 }
 
-.actions {
-	text-align: center;
-}
-.actions .items {
-	background-color: green;
-	border-radius: 3px;
-}
-
 a, a:link, a:visited, a:hover {
 	text-decoration: none;
-}
-
-.datatime {
-	text-align:center;
-	background-color: yellow;
 }
