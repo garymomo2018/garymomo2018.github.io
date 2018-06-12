@@ -9,7 +9,6 @@
 	border-radius: 3px;
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: 800;
-	background-color: green;
 }
 
 .actions .fixed {
@@ -23,7 +22,8 @@
 .actionsImg {
 	width: 100%;
 }
-.fixed .btn {
+
+.fixed .btn, .items .btn {
 	padding-left: 0;
 	padding-right: 0;
 	width: 50px;
@@ -41,19 +41,19 @@
 	background-color: #e0e066;
 }
 
-#it5 {
+#it6 {
 	background-color: #cc3333;
 }
-#it6 {
+#it5 {
 	background-color: #9933cc;
 }
-#it7 {
+#it4 {
 	background-color: #cc3399;
 }
-#it8 {
+#it3 {
 	background-color: #cccc33;
 }
-#it9 {
+#it2 {
 	background-color: #ffffff;
 }
 

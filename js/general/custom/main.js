@@ -59,8 +59,8 @@ window.onload = function afterload() {
 		var aVal = $(a).attr("id").substring(2, $(a).attr("id").length);
 		var bVal = $(b).attr("id").substring(2, $(b).attr("id").length);
 
-		if (parseInt(aVal) < parseInt(bVal)) {return -1;}
-		if (parseInt(aVal) > parseInt(bVal)) {return 1;}
+		if (parseInt(aVal) < parseInt(bVal)) {return 1;}
+		if (parseInt(aVal) > parseInt(bVal)) {return -1;}
 	});
 
 	$.each(itemsSelector, function(key, value) {
