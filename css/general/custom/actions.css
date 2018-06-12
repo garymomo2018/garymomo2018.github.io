@@ -2,6 +2,7 @@
 .actions {
 	text-align: center;
 }
+
 .actions .items {
 	margin: 1rem auto 0.5rem;
 	width: 90%;
@@ -9,6 +10,35 @@
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: 800;
 	background-color: green;
+}
+
+.actions .fixed {
+	margin: 1rem auto 0.5rem;
+	width: 90%;
+	border-radius: 3px;
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 800;
+}
+
+.actionsImg {
+	width: 100%;
+}
+.fixed .btn {
+	padding-left: 0;
+	padding-right: 0;
+	width: 50px;
+	font-size: 75%;
+	margin-bottom: 5px;
+}
+
+.network {
+	background-color: #bb88cc;
+}
+.tvshow {
+	background-color: #997755;
+}
+.radio {
+	background-color: #e0e066;
 }
 
 #it5 {
