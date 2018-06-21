@@ -9,6 +9,7 @@
 	border-radius: 3px;
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: 800;
+	word-break: break-all;
 }
 
 .actions .fixed {
@@ -31,14 +32,35 @@
 	margin-bottom: 5px;
 }
 
+.live {
+	background-color: #33ffff;
+}
+.music {
+	background-color: #ff3333;
+}
+.dvdbd {
+	background-color: #dd7700;
+}
 .network {
 	background-color: #bb88cc;
 }
 .tvshow {
 	background-color: #997755;
 }
+.anime {
+	background-color: #ff88c2;
+}
+.movie {
+	background-color: #7b7b7b;
+}
 .radio {
 	background-color: #e0e066;
+}
+.book {
+	background-color: #cccccc;
+}
+.other {
+	background-color: #66ff66;
 }
 
 .it-momoclo-red {

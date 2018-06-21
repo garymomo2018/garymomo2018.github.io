@@ -19,9 +19,11 @@
 			if (width > 767) {
 				$(".container-fluid").css("padding-right", "0px");
 				$(".container-fluid").css("padding-left", "0px");
+				$("#arrowBody").css("height", $(".actions").css("height"));
 			} else {
 				$(".container-fluid").css("padding-right", "15px");
 				$(".container-fluid").css("padding-left", "15px");
+				$("#arrowBody").css("height", $(".actions").css("height"));
 			}
 		}
 		ori_width = width;
@@ -49,7 +51,7 @@
 });
 
 window.onload = function afterload() {
-	$("#arrowBody").css("height", $(".actions").css("height"))
+	$("#arrowBody").css("height", $(".actions").css("height"));
 	var actionTL = new TimelineMax({paused : true});
 	var arrowTL = new TimelineMax();
 
@@ -68,15 +70,15 @@ window.onload = function afterload() {
 			alpha : 0,
 			scale : 5,
 			ease : SlowMo.ease.config(0.1, 0.1, false)
-		});
+		},"-=0.3");
 	});
 
 	arrowTL.from($("#arrowHead"), 1, {
 		alpha : 0
 	})
-	.from($("#arrowBody"), 2, {
+	.from($("#arrowBody"), 3, {
 		height : 0
-	}, "-=1.2");
+	});
 
 	actionTL.play();
 }
