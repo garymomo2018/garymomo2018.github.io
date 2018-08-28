@@ -5,7 +5,6 @@
 
 	resize();
 	$(window).on("resize", resize);
-//	$(window).on("scroll", resize);
 
 	function resize() {
 		width = window.innerWidth;
@@ -59,9 +58,9 @@
 		ease:Back.easeOut
 	});
 
-	$(".items").css("animation-duration", "0.4S").addClass("animated rollIn");
+	$(".items").css("animation-duration", "0.8S").addClass("animated rollIn");
 
-	setTimeout(afterload, 1000);
+	setTimeout(afterload, 300);
 });
 
 function afterload() {
@@ -70,7 +69,7 @@ function afterload() {
 
 	var arrowTL = new TimelineMax({onComplete : nextStep});
 
-	arrowTL.from($("#arrowBody"), 5, {
+	arrowTL.from($("#arrowBody"), 4, {
 		height : 0
 	})
 	.to($("#arrowHead"), 1.5, {
