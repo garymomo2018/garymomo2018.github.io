@@ -6,6 +6,7 @@ document.writeln("				<span class='icon-bar'></span>");
 document.writeln("				<span class='icon-bar'></span>");
 document.writeln("				<span class='icon-bar'></span>");
 document.writeln("			</button>");
+document.writeln("			<a class='navbar-brand' href='https://ppt.cc/f8kymx'>回首頁圖</a>");
 document.writeln("		</div>");
 document.writeln("		<div class='collapse navbar-collapse' id='momoNavbar'>");
 document.writeln("			<ul class='nav navbar-nav'>");

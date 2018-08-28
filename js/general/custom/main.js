@@ -2,9 +2,11 @@
 	var width = window.innerWidth;
 	var ori_width = "0";
 	var setheight = "0";
+	var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
 
 	resize();
 	$(window).on("resize", resize);
+	$(window).on("scroll", resize);
 
 	function resize() {
 		width = window.innerWidth;
@@ -58,25 +60,13 @@
 		ease:Back.easeOut
 	});
 
-	$(".items").css("animation-duration", "0.8S").addClass("animated rollIn");
+	$(".items").css("animation-duration", "2s").addClass("animated fadeInLeft");
 
-	setTimeout(afterload, 300);
-});
-
-function afterload() {
 	$("#arrowBody").css("opacity", "1");
 	$("#arrowBody").css("height", $(".actions").css("height"));
-
-	var arrowTL = new TimelineMax({onComplete : nextStep});
-
-	arrowTL.from($("#arrowBody"), 4, {
-		height : 0
-	})
-	.to($("#arrowHead"), 1.5, {
-		alpha : 1
+	$("#arrowBody").css("animation-duration", "4s").
+	addClass("animated bounceInDown").one(animationEnd, function() {
+		$("#arrowHead").css("opacity", "1");
+		$(".anchor2").css("display", "block");
 	});
-}
-
-function nextStep() {
-	$(".anchor2").css("display", "block");
-}
+});
