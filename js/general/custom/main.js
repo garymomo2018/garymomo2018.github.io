@@ -5,7 +5,7 @@
 
 	resize();
 	$(window).on("resize", resize);
-	$(window).on("scroll", resize);
+//	$(window).on("scroll", resize);
 
 	function resize() {
 		width = window.innerWidth;
