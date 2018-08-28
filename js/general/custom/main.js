@@ -48,5 +48,5 @@
 		ease:Back.easeOut
 	});
 
-	$(".items").css("animation-duration", "2s").addClass("animated fadeInLeft");
+	$(".items").css("animation-duration", "4s").addClass("animated fadeInLeft");
 });
