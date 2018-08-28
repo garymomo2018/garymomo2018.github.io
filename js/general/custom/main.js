@@ -6,7 +6,6 @@
 
 	resize();
 	$(window).on("resize", resize);
-	$(window).on("scroll", resize);
 
 	function resize() {
 		width = window.innerWidth;
@@ -21,24 +20,13 @@
 			if (width > 767) {
 				$(".container-fluid").css("padding-right", "0px");
 				$(".container-fluid").css("padding-left", "0px");
-				$("#arrowBody").css("height", $(".actions").css("height"));
 			} else {
 				$(".container-fluid").css("padding-right", "15px");
 				$(".container-fluid").css("padding-left", "15px");
-				$("#arrowBody").css("height", $(".actions").css("height"));
 			}
 		}
 		ori_width = width;
 	}
-
-	$("#collapseParent").on("show.bs.collapse", function() {
-		$("#arrowHead").css("display", "none");
-	});
-
-	$("#collapseParent").on("shown.bs.collapse", function() {
-		$("#arrowBody").css("height", $(".actions").css("height"));
-		$("#arrowHead").css("display", "inline");
-	});
 
 	var fontTL = new TimelineMax({repeat: -1});
 	var fTLTime = 8;
@@ -61,12 +49,4 @@
 	});
 
 	$(".items").css("animation-duration", "2s").addClass("animated fadeInLeft");
-
-	$("#arrowBody").css("opacity", "1");
-	$("#arrowBody").css("height", $(".actions").css("height"));
-	$("#arrowBody").css("animation-duration", "4s").
-	addClass("animated bounceInDown").one(animationEnd, function() {
-		$("#arrowHead").css("opacity", "1");
-		$(".anchor2").css("display", "block");
-	});
 });
