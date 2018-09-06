@@ -64,7 +64,7 @@
 			target = $(this).parents(".music-items").find(".music-intro-3");
 			target.show();
 			target.addClass("animated fadeInRight");
-
+			resize();
 			$("html, body").animate({scrollTop: $("#" + $(this).parents(".music-items").attr("id")).offset().top}, 500);
 		});
 	});
