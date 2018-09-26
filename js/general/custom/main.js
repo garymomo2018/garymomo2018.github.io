@@ -4,6 +4,8 @@
 	var setheight = "0";
 	var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
 
+	$(".items:not(.it-momoclo-red,.it-momoclo-purple,.it-momoclo-pink,.it-momoclo-yellow,.it-momoclo-all)").hide();
+
 	resize();
 	$(window).on("resize", resize);
 
