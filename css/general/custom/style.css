@@ -130,7 +130,7 @@ a, a:link, a:visited, a:hover {
 	font-weight: 900;
 }
 .music-list-name span {
-	font-size: 0.1rem;
+	font-size: 0.9rem;
 }
 .music-list-desc p {
 	text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
