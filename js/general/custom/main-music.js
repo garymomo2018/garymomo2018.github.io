@@ -71,5 +71,39 @@
 });
 
 $(window).on("load", function() {
+	var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+
 	$(".loader").hide();
+
+	var borderTL = new TimelineMax({onComplete : nextStep});
+
+	borderTL.to($(".music-extra-box"), 0.2, {
+		alpha : 0.6
+	})
+	.to($(".music-extra-box"), 0.2, {
+		alpha : 0
+	}, "+=0.2")
+	.to($(".music-extra-box"), 0.1, {
+		alpha : 0.8
+	})
+	.to($(".music-extra-box"), 0.1, {
+		alpha : 0
+	})
+	.to($(".music-extra-box"), 0.2, {
+		alpha : 0.4
+	})
+	.to($(".music-extra-box"), 0.1, {
+		alpha : 0
+	}, "+=0.3")
+	.to($(".music-extra-box"), 0.6, {
+		alpha : 1
+	});
+
+	function nextStep() {
+		$(".music-extra-items").css("opacity", "1");
+		$(".music-extra-title").css("animation-duration", "1s").addClass("animated fadeInDown");
+		$(".music-extra-audit").css("animation-duration", "1s").addClass("animated fadeInRight");
+		$(".music-extra-video").css("animation-duration", "1s").addClass("animated zoomIn");
+		$(".music-extra-detail").css("animation-duration", "1s").addClass("animated fadeInUp");
+	}
 });
