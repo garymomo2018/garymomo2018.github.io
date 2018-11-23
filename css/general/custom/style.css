@@ -216,6 +216,13 @@ a, a:link, a:visited, a:hover {
 	padding-right: 12%;
 	font-size: 1.6rem;
 }
+.music-extra-back {
+	text-align: right;
+}
+.music-extra-detail a, .music-extra-detail a:link, .music-extra-detail a:visited, .music-extra-detail a:hover {
+	color: #aaaaaa;
+	cursor: pointer;
+}
 .music-extra-items {
 	opacity: 0;
 }

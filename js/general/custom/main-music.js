@@ -68,6 +68,32 @@
 			$("html, body").animate({scrollTop: $("#" + $(this).parents(".music-items").attr("id")).offset().top}, 500);
 		});
 	});
+	
+	$(".music-extra-back a").on("click tap", function() {
+		var urlParam = window.location.search.split("back=")[1] ? window.location.search.split("back=")[1] : "no";
+		alert(urlParam);
+		if (urlParam != "no") {
+			var mainClass = urlParam.split("-")[0] ? urlParam.split("-")[0] : "no";
+			var subClass = urlParam.split("-")[1] ? urlParam.split("-")[1] : "no";
+			if (mainClass != "no" && subClass != "no") {
+				var targetClass = "";
+				if (mainClass == "") {
+					
+				} else {
+					targetClass = "music";
+				}
+				if (subClass == "2016") {
+					location.replace("https://garymomo" + subClass + ".github.io/redirection/" + targetClass);
+				} else {
+					location.replace("https://garymomo" + subClass + ".github.io/" + targetClass);
+				}
+			} else {
+				location.replace("https://garymomoindex.github.io/?visit=true");
+			}
+		} else {
+			location.replace("https://garymomoindex.github.io/?visit=true");
+		}
+	});
 });
 
 $(window).on("load", function() {
@@ -77,25 +103,13 @@ $(window).on("load", function() {
 
 	var borderTL = new TimelineMax({onComplete : nextStep});
 
-	borderTL.to($(".music-extra-box"), 0.2, {
-		alpha : 0.6
-	})
-	.to($(".music-extra-box"), 0.2, {
-		alpha : 0
-	}, "+=0.2")
-	.to($(".music-extra-box"), 0.1, {
-		alpha : 0.8
+	borderTL.to($(".music-extra-box"), 0.5, {
+		alpha : 0.5
 	})
 	.to($(".music-extra-box"), 0.1, {
 		alpha : 0
-	})
-	.to($(".music-extra-box"), 0.2, {
-		alpha : 0.4
-	})
-	.to($(".music-extra-box"), 0.1, {
-		alpha : 0
-	}, "+=0.3")
-	.to($(".music-extra-box"), 0.6, {
+	}, "+=0.5")
+	.to($(".music-extra-box"), 0.8, {
 		alpha : 1
 	});
 
