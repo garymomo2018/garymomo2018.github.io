@@ -71,7 +71,7 @@
 	
 	$(".music-extra-back a").on("click tap", function() {
 		var urlParam = window.location.search.split("back=")[1] ? window.location.search.split("back=")[1] : "no";
-		alert(urlParam);
+
 		if (urlParam != "no") {
 			var mainClass = urlParam.split("-")[0] ? urlParam.split("-")[0] : "no";
 			var subClass = urlParam.split("-")[1] ? urlParam.split("-")[1] : "no";
