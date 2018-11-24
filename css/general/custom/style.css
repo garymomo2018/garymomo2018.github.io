@@ -97,7 +97,7 @@ a, a:link, a:visited, a:hover {
 	animation-duration: 2s;
 	display: none;
 }
-.music-intro-name-2 {
+.music-intro-name-2, .music-tabs {
 	color: #986db2;
 	text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
 	font-size: 2rem;
@@ -141,6 +141,7 @@ a, a:link, a:visited, a:hover {
 }
 .music-list-detail {
 	line-height: 2.5rem;
+	padding-bottom: 3rem;
 }
 .music-list-detail-icon {
 	position: absolute;

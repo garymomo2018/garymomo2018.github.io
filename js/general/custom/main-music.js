@@ -4,6 +4,10 @@
 	var setheight = "0";
 	var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
 
+	// initial tab for IE problem
+	$(".nav-tabs a:eq(0)").trigger("click");
+	$(".nav-tabs a:eq(1)").trigger("blur");
+
 	resize();
 	$(window).on("resize", resize);
 
