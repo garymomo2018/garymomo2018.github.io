@@ -1759,7 +1759,7 @@
 		var urlParam = window.location.search.split("item=")[1] ? window.location.search.split("item=")[1] : "no";
 
 		if (urlParam != "no") {
-			$("#anchor-" + urlParam).trigger("click");
+			$("#anchor-" + urlParam + " .music-cover").trigger("click");
 		}
 	});
 </script>
