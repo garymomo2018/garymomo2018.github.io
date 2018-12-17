@@ -1759,7 +1759,8 @@
 		var urlParam = window.location.search.split("item=")[1] ? window.location.search.split("item=")[1] : "no";
 
 		if (urlParam != "no") {
-			$("#anchor-" + urlParam).trigger("click");
+			console.log(urlParam);
+// 			$("#anchor-" + urlParam).trigger("click");
 		}
 	});
 </script>
