@@ -1759,6 +1759,7 @@
 		var urlParam = window.location.search.split("item=")[1] ? window.location.search.split("item=")[1] : "no";
 
 		if (urlParam != "no") {
+			$("html, body").animate({scrollTop: $("#anchor-" + urlParam).offset().top}, 0);
 			$("#anchor-" + urlParam + " .music-cover").trigger("click");
 		}
 	});
