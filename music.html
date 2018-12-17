@@ -91,7 +91,7 @@
 												&nbsp;
 												<span class="music-list-detail-icon">
 													<span class="music-list-detail-1">求詳細&nbsp;<span class="glyphicon glyphicon-hand-right"></span>&nbsp;</span>
-													<a href="https://garymomo2018.github.io/music/music-20181116-01?back=year-2018" class="colorControl" title="曲目一"><span class="glyphicon glyphicon-cog"></span></a>
+													<a href="https://garymomo2018.github.io/music/music-20181116-01?back=year-2018-b9" class="colorControl" title="曲目一"><span class="glyphicon glyphicon-cog"></span></a>
 												</span>
 											</p>
 										</li>
@@ -1753,5 +1753,15 @@
 			</div>
 		</footer>
 	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var urlParam = window.location.search.split("item=")[1] ? window.location.search.split("back=")[1] : "no";
+
+		if (urlParam != "no") {
+			console.log(urlParam);
+		}
+	});
+</script>
 </body>
 </html>
