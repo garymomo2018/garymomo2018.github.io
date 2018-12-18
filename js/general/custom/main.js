@@ -2,6 +2,7 @@
 	var width = window.innerWidth;
 	var ori_width = "0";
 	var setheight = "0";
+	var actionRLock = false;
 
 	resize();
 	$(window).on("resize", resize);
@@ -52,16 +53,24 @@
 	.to($(".items-member"), 2, { autoAlpha: 1, scale: 1 });
 
 	$(".tags span").on("click tap", function() {
+		if (actionRLock) {
+			return;
+		}
+		actionRLock = true;
 		$(".items:not(.it-momoclo-red,.it-momoclo-purple,.it-momoclo-pink,.it-momoclo-yellow,.it-momoclo-all)").hide();
 		var target = $(this).attr("id").split("-")[1];
 		if (target == "all") {
 			$(".items:not(.item-disable)").css("opacity", "1").show();
-			TweenLite.from($(".items:not(.item-disable)"), 1.5, { autoAlpha: 0.1 });
+			TweenLite.from($(".items:not(.item-disable)"), 1.5, { autoAlpha: 0.1, onComplete:finishActionR });
 		} else {
 			$("#collapseParent ." + target + ":not(.item-disable)").css("opacity", "1").show();
-			TweenLite.from($("#collapseParent ." + target + ":not(.item-disable)"), 0.8, { rotation: 90, autoAlpha: 0.1 });
+			TweenLite.from($("#collapseParent ." + target + ":not(.item-disable)"), 0.8, { rotation: 90, autoAlpha: 0.1, onComplete:finishActionR });
 		}
 	});
+	
+	function finishActionR() {
+		actionRLock = false;
+	}
 });
 
 $(window).on("load", function() {
