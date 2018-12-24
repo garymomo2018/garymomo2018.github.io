@@ -1820,10 +1820,29 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		var urlParam = window.location.search.split("item=")[1] ? window.location.search.split("item=")[1] : "no";
+		var musicTypeTimer = null;
 
 		if (urlParam != "no") {
-			$("html, body").animate({scrollTop: $("#anchor-" + urlParam).offset().top}, 0);
-			$("#anchor-" + urlParam + " .music-cover").trigger("click");
+			var type = urlParam.substring(0, 1);
+			if (type == "a") {
+				$("#tab-2").trigger("click");
+			} else if (type == "b") {
+				$("#tab-1").trigger("click");
+			}
+
+			musicTypeTimer = setTimeout(nextMusicTypeStep, 500);
+		}
+
+		function nextMusicTypeStep() {
+			if (musicTypeTimer != null) {
+				clearTimeout(musicTypeTimer);
+				musicTypeTimer = null;
+			}
+
+			if (urlParam != "no") {
+				$("html, body").animate({scrollTop: $("#anchor-" + urlParam).offset().top}, 0);
+				$("#anchor-" + urlParam + " .music-cover").trigger("click");
+			}
 		}
 	});
 </script>
