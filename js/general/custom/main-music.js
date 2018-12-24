@@ -7,7 +7,7 @@
 
 	// initial tab for IE problem
 	$(".nav-tabs a:eq(0)").trigger("click");
-	$(".nav-tabs a:eq(1)").trigger("blur");console.log("123");
+	$(".nav-tabs a:eq(1)").trigger("blur");
 
 	resize();
 	$(window).on("resize", resize);

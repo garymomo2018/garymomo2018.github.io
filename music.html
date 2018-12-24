@@ -1822,16 +1822,15 @@
 		var urlParam = window.location.search.split("item=")[1] ? window.location.search.split("item=")[1] : "no";
 		var musicTypeTimer = null;
 
-		console.log("456");
 		if (urlParam != "no") {
-			var type = urlParam.substring(0, 1);console.log("type= "+ type);
+			var type = urlParam.substring(0, 1);
 			if (type == "a") {
-				$("#tab-2").trigger("click");
+				$(".nav-tabs a:eq(1)").trigger("click");
 			} else if (type == "b") {
-				$("#tab-1").trigger("click");
+				$(".nav-tabs a:eq(0)").trigger("click");
 			}
 
-			musicTypeTimer = setTimeout(nextMusicTypeStep, 500);
+			musicTypeTimer = setTimeout(nextMusicTypeStep, 300);
 		}
 
 		function nextMusicTypeStep() {
