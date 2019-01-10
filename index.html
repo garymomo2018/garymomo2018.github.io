@@ -32,20 +32,66 @@
 		<div class="mainContain">
 			<div class="row">
 				<div class="col-xs-12 tags">
-					<h2>
-						<span class="label all" id="tags-all">&nbsp;&nbsp;全列表&nbsp;&nbsp;</span>
-						<span class="label live" id="tags-live">找LIVE相關區塊</span>
-						<span class="label music" id="tags-music">找音樂作品相關區塊</span>
-						<span class="label dvdbd" id="tags-dvdbd">找影像作品相關區塊</span>
-						<span class="label network" id="tags-network">找網路相關區塊</span>
-						<span class="label tvshow" id="tags-tvshow">找電視相關區塊</span>
-						<span class="label anime" id="tags-anime">找動漫作品相關區塊</span>
-						<span class="label movie" id="tags-movie">找電影作品相關區塊</span>
-						<span class="label radio" id="tags-radio">找廣播相關區塊</span>
-						<span class="label book" id="tags-book">找書報雜誌相關區塊</span>
-						<span class="label game" id="tags-game">找遊戲作品相關區塊</span>
-						<span class="label other" id="tags-other">找其他區塊</span>
-					</h2>
+					<div class="row">
+						<div class="col-xs-4 live tags-item" id="tags-live">
+							<div><span class="glyphicon glyphicon-music"></span></div>
+							<p>找LIVE</p>
+						</div>
+						<div class="col-xs-4 music tags-item" id="tags-music">
+							<div><span class="glyphicon glyphicon-cd"></span></div>
+							<p>找音樂作品</p>
+						</div>
+						<div class="col-xs-4 dvdbd tags-item" id="tags-dvdbd">
+							<div><span class="glyphicon glyphicon-facetime-video"></span></div>
+							<p>找影像作品</p>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-xs-4 book tags-item" id="tags-book">
+							<div><span class="glyphicon glyphicon-book"></span></div>
+							<p>找書籍雜誌</p>
+						</div>
+						<div class="col-xs-4 tvshow tags-item" id="tags-tvshow">
+							<div><span class="glyphicon glyphicon-sunglasses"></span></div>
+							<p>找電視演出</p>
+						</div>
+						<div class="col-xs-4 radiosign tags-item" id="tags-radiosign">
+							<div><span class="glyphicon glyphicon-signal"></span></div>
+							<p>找廣播演出</p>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-xs-4 movie tags-item" id="tags-movie">
+							<div><span class="glyphicon glyphicon-film"></span></div>
+							<p>找電影演出</p>
+						</div>
+						<div class="col-xs-4 network tags-item" id="tags-network">
+							<div><span class="glyphicon glyphicon-globe"></span></div>
+							<p>找網路相關</p>
+						</div>
+						<div class="col-xs-4 anime tags-item" id="tags-anime">
+							<div><span class="glyphicon glyphicon-fire"></span></div>
+							<p>找動漫相關</p>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-xs-4 game tags-item" id="tags-game">
+							<div><span class="glyphicon glyphicon-knight"></span></div>
+							<p>找遊戲相關</p>
+						</div>
+						<div class="col-xs-4 other tags-item" id="tags-other">
+							<div><span class="glyphicon glyphicon-user"></span></div>
+							<p>找其他活動</p>
+						</div>
+						<div class="col-xs-4 all tags-item" id="tags-all">
+							<div><span class="glyphicon glyphicon-eye-open"></span></div>
+							<p>全部列表</p>
+						</div>
+					</div>
+					<br>
 				</div>
 			</div>
 			<div class="row">
@@ -610,7 +656,7 @@
 						</div>
 					</div>
 					<div class="items other panel" id="it866">
-						<h4 class="items-head"><b>日職 氣象主播</b></h4>
+						<h4 class="items-head"><b>新聞 氣象主播</b></h4>
 						<p class="items-head">日期：12月11日</p>
 						<p class="items-tiltle">『桃草武士．依田司』</p>
 						<p class="items-icon">&nbsp;<a class="colorControl" data-toggle="collapse" data-parent="#collapseParent" href="#collapse866" title="求詳細"><span class="glyphicon glyphicon-cog"></span></a></p>
@@ -1258,7 +1304,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it796">
+					<div class="items radiosign panel" id="it796">
 						<h4 class="items-head"><b>廣播 NHK FM</b></h4>
 						<p class="items-head">日期：11月17日</p>
 						<p class="items-tiltle">『FMシアター（AIは故障中）』</p>
@@ -1319,7 +1365,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it791">
+					<div class="items radiosign panel" id="it791">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：11月15日</p>
 						<p class="items-tiltle">『ラジオリビング』</p>
@@ -2343,7 +2389,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it692">
+					<div class="items radiosign panel" id="it692">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：10月1日</p>
 						<p class="items-tiltle">『根本宗子と長井短のオールナイトニッポン0』</p>
@@ -2725,7 +2771,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it644">
+					<div class="items radiosign panel" id="it644">
 						<h4 class="items-head"><b>廣播 TBSラジオ</b></h4>
 						<p class="items-head">日期：9月14日</p>
 						<p class="items-tiltle">『JUNK バナナマンのバナナムーンGOLD』</p>
@@ -3258,7 +3304,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it581">
+					<div class="items radiosign panel" id="it581">
 						<h4 class="items-head"><b>廣播 NHK FM</b></h4>
 						<p class="items-head">日期：8月19日</p>
 						<p class="items-tiltle">『今日は一日"ホラーソング"三昧』</p>
@@ -3555,7 +3601,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it558">
+					<div class="items radiosign panel" id="it558">
 						<h4 class="items-head"><b>廣播 NHKラジオ第1</b></h4>
 						<p class="items-head">日期：8月7日</p>
 						<p class="items-tiltle">『連想ゲームNEO』</p>
@@ -4551,7 +4597,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it447">
+					<div class="items radiosign panel" id="it447">
 						<h4 class="items-head"><b>廣播 NHK FM</b></h4>
 						<p class="items-head">日期：6月23日</p>
 						<p class="items-tiltle">『FMシアター（AIは故障中）』</p>
@@ -4564,7 +4610,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it446">
+					<div class="items radiosign panel" id="it446">
 						<h4 class="items-head"><b>廣播 NHK FM</b></h4>
 						<p class="items-head">日期：6月23日</p>
 						<p class="items-tiltle">『ヒャダインのガルポプ!』</p>
@@ -4708,7 +4754,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it434">
+					<div class="items radiosign panel" id="it434">
 						<h4 class="items-head"><b>廣播 TBSラジオ</b></h4>
 						<p class="items-head">日期：6月19日</p>
 						<p class="items-tiltle">『生島ヒロシのおはよう一直線』</p>
@@ -4779,7 +4825,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it428">
+					<div class="items radiosign panel" id="it428">
 						<h4 class="items-head"><b>廣播 TBSラジオ</b></h4>
 						<p class="items-head">日期：6月12日</p>
 						<p class="items-tiltle">『生島ヒロシのおはよう一直線』</p>
@@ -4938,7 +4984,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it415">
+					<div class="items radiosign panel" id="it415">
 						<h4 class="items-head"><b>廣播 TBSラジオ</b></h4>
 						<p class="items-head">日期：6月5日</p>
 						<p class="items-tiltle">『生島ヒロシのおはよう一直線』</p>
@@ -5214,7 +5260,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it373">
+					<div class="items radiosign panel" id="it373">
 						<h4 class="items-head"><b>廣播 TOKYO FM</b></h4>
 						<p class="items-head">日期：5月26日</p>
 						<p class="items-tiltle">『JA全農COUNTDOWN JAPAN』</p>
@@ -5276,7 +5322,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it368">
+					<div class="items radiosign panel" id="it368">
 						<h4 class="items-head"><b>廣播 FM北海道（AIR-G'）</b></h4>
 						<p class="items-head">日期：5月24日</p>
 						<p class="items-tiltle">『IMAREAL』</p>
@@ -5320,7 +5366,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it365">
+					<div class="items radiosign panel" id="it365">
 						<h4 class="items-head"><b>廣播 FM北海道（AIR-G'）</b></h4>
 						<p class="items-head">日期：5月23日</p>
 						<p class="items-tiltle">『IMAREAL』</p>
@@ -5331,7 +5377,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it364">
+					<div class="items radiosign panel" id="it364">
 						<h4 class="items-head"><b>廣播 Kiss FM KOBE</b></h4>
 						<p class="items-head">日期：5月23日</p>
 						<p class="items-tiltle">『2055 ARTIST LINE』</p>
@@ -5378,7 +5424,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it360">
+					<div class="items radiosign panel" id="it360">
 						<h4 class="items-head"><b>廣播 FM北海道（AIR-G'）</b></h4>
 						<p class="items-head">日期：5月22日</p>
 						<p class="items-tiltle">『IMAREAL』</p>
@@ -5389,7 +5435,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it359">
+					<div class="items radiosign panel" id="it359">
 						<h4 class="items-head"><b>廣播 Kiss FM KOBE</b></h4>
 						<p class="items-head">日期：5月22日</p>
 						<p class="items-tiltle">『2055 ARTIST LINE』</p>
@@ -5424,7 +5470,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it356">
+					<div class="items radiosign panel" id="it356">
 						<h4 class="items-head"><b>廣播 FM北海道（AIR-G'）</b></h4>
 						<p class="items-head">日期：5月21日</p>
 						<p class="items-tiltle">『IMAREAL』</p>
@@ -5435,7 +5481,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it355">
+					<div class="items radiosign panel" id="it355">
 						<h4 class="items-head"><b>廣播 Kiss FM KOBE</b></h4>
 						<p class="items-head">日期：5月21日</p>
 						<p class="items-tiltle">『2055 ARTIST LINE』</p>
@@ -5946,7 +5992,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it294">
+					<div class="items radiosign panel" id="it294">
 						<h4 class="items-head"><b>廣播 NHK FM</b></h4>
 						<p class="items-head">日期：4月28日</p>
 						<p class="items-tiltle">『ヒャダインのガルポプ!』</p>
@@ -6206,7 +6252,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it274">
+					<div class="items radiosign panel" id="it274">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：4月19日</p>
 						<p class="items-tiltle">『ミューコミプラス』</p>
@@ -6218,7 +6264,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it273">
+					<div class="items radiosign panel" id="it273">
 						<h4 class="items-head"><b>廣播 FM滋賀</b></h4>
 						<p class="items-head">日期：4月19日</p>
 						<p class="items-tiltle">『e-joy』</p>
@@ -6254,7 +6300,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it270">
+					<div class="items radiosign panel" id="it270">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：4月18日</p>
 						<p class="items-tiltle">『ミューコミプラス』</p>
@@ -6266,7 +6312,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it269">
+					<div class="items radiosign panel" id="it269">
 						<h4 class="items-head"><b>廣播 FM滋賀</b></h4>
 						<p class="items-head">日期：4月18日</p>
 						<p class="items-tiltle">『e-joy』</p>
@@ -6311,7 +6357,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it265">
+					<div class="items radiosign panel" id="it265">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：4月17日</p>
 						<p class="items-tiltle">『ミューコミプラス』</p>
@@ -6323,7 +6369,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it264">
+					<div class="items radiosign panel" id="it264">
 						<h4 class="items-head"><b>廣播 FM滋賀</b></h4>
 						<p class="items-head">日期：4月17日</p>
 						<p class="items-tiltle">『e-joy』</p>
@@ -6346,7 +6392,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it262">
+					<div class="items radiosign panel" id="it262">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：4月16日</p>
 						<p class="items-tiltle">『ミューコミプラス』</p>
@@ -6358,7 +6404,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it261">
+					<div class="items radiosign panel" id="it261">
 						<h4 class="items-head"><b>廣播 FM滋賀</b></h4>
 						<p class="items-head">日期：4月16日</p>
 						<p class="items-tiltle">『e-joy』</p>
@@ -6524,7 +6570,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it247">
+					<div class="items radiosign panel" id="it247">
 						<h4 class="items-head"><b>廣播 FM滋賀</b></h4>
 						<p class="items-head">日期：4月12日</p>
 						<p class="items-tiltle">『e-joy』</p>
@@ -6564,7 +6610,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it244">
+					<div class="items radiosign panel" id="it244">
 						<h4 class="items-head"><b>廣播 FM滋賀</b></h4>
 						<p class="items-head">日期：4月11日</p>
 						<p class="items-tiltle">『e-joy』</p>
@@ -6601,7 +6647,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it241">
+					<div class="items radiosign panel" id="it241">
 						<h4 class="items-head"><b>廣播 FM滋賀</b></h4>
 						<p class="items-head">日期：4月10日</p>
 						<p class="items-tiltle">『e-joy』</p>
@@ -6613,7 +6659,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it240">
+					<div class="items radiosign panel" id="it240">
 						<h4 class="items-head"><b>廣播 FM滋賀</b></h4>
 						<p class="items-head">日期：4月9日</p>
 						<p class="items-tiltle">『e-joy』</p>
@@ -6761,7 +6807,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it228">
+					<div class="items radiosign panel" id="it228">
 						<h4 class="items-head"><b>廣播 NHK FM</b></h4>
 						<p class="items-head">日期：4月5日</p>
 						<p class="items-tiltle">『miwaのミューズノート』</p>
@@ -6798,7 +6844,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it225">
+					<div class="items radiosign panel" id="it225">
 						<h4 class="items-head"><b>廣播 広島FM</b></h4>
 						<p class="items-head">日期：4月2日</p>
 						<p class="items-tiltle">『DAYS!?』</p>
@@ -7026,7 +7072,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it190">
+					<div class="items radiosign panel" id="it190">
 						<h4 class="items-head"><b>廣播 信越放送</b></h4>
 						<p class="items-head">日期：3月26日</p>
 						<p class="items-tiltle">『坂ちゃんのずくだせえぶりでい』</p>
@@ -7373,7 +7419,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it163">
+					<div class="items radiosign panel" id="it163">
 						<h4 class="items-head"><b>廣播 FM宮崎</b></h4>
 						<p class="items-head">日期：3月8日</p>
 						<p class="items-tiltle">『グッドタイム』</p>
@@ -7509,7 +7555,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it152">
+					<div class="items radiosign panel" id="it152">
 						<h4 class="items-head"><b>廣播 cross fm</b></h4>
 						<p class="items-head">日期：3月3日</p>
 						<p class="items-tiltle">『新アラジン バカヤローラジオ！β』</p>
@@ -7609,7 +7655,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it144">
+					<div class="items radiosign panel" id="it144">
 						<h4 class="items-head"><b>廣播 愛知@FM</b></h4>
 						<p class="items-head">日期：3月1日</p>
 						<p class="items-tiltle">『crisp air』</p>
@@ -7658,7 +7704,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it120">
+					<div class="items radiosign panel" id="it120">
 						<h4 class="items-head"><b>廣播 熊本放送</b></h4>
 						<p class="items-head">日期：2月28日</p>
 						<p class="items-tiltle">『塚原まきこの福ミミらじお』</p>
@@ -7779,7 +7825,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it110">
+					<div class="items radiosign panel" id="it110">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：2月24日</p>
 						<p class="items-tiltle">『川上アキラのオールナイトニッポンR』</p>
@@ -7947,7 +7993,7 @@
 							<p>百田夏菜子：配合生日至4月12日截止訂製7月12日寄送 <a class="btn btn-warning" role="button" target="_blank" href="https://hustlepress.co.jp/momokuro_zero49/">前往</a></p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it97">
+					<div class="items radiosign panel" id="it97">
 						<h4 class="items-head"><b>廣播 LOVE FM</b></h4>
 						<p class="items-head">日期：2月20日</p>
 						<p class="items-tiltle">『music×serendipity』</p>
@@ -7959,7 +8005,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it96">
+					<div class="items radiosign panel" id="it96">
 						<h4 class="items-head"><b>廣播 TBSラジオ</b></h4>
 						<p class="items-head">日期：2月20日</p>
 						<p class="items-tiltle">『伊集院光とらじおと』</p>
@@ -8554,7 +8600,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it30">
+					<div class="items radiosign panel" id="it30">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：1月22日</p>
 						<p class="items-tiltle">『ミューコミプラス』</p>
@@ -8926,7 +8972,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="items radio panel" id="it1">
+					<div class="items radiosign panel" id="it1">
 						<h4 class="items-head"><b>廣播 日本放送</b></h4>
 						<p class="items-head">日期：1月1日</p>
 						<p class="items-tiltle">『田中将大のオールナイトニッポンNY』</p>
@@ -9052,7 +9098,7 @@
 							<a class="btn btn-info" role="button" target="_blank" href="https://twitter.com/momoclochan_ex">Tt</a>
 						</p>
 					</div>
-					<div class="fixed radio panel">
+					<div class="fixed radiosign panel">
 						<h4><b>廣播 文化放送</b></h4>
 						<figure><img class="actionsImg" src="image/radio-punch.jpg" /></figure>
 						<p>日期：每週星期六</p>
@@ -9061,7 +9107,7 @@
 							<a class="btn btn-warning" role="button" target="_blank" href="http://www.joqr.co.jp/momoclo">前往</a>
 						</p>
 					</div>
-					<div class="fixed radio panel">
+					<div class="fixed radiosign panel">
 						<h4><b>廣播 TOKYO FM</b></h4>
 						<figure><img class="actionsImg" src="image/radio-suzuki.png" /></figure>
 						<p>日期：每週星期日</p>
@@ -9071,7 +9117,7 @@
 							<a class="btn btn-info" role="button" target="_blank" href="https://twitter.com/happyclo">Tt</a>
 						</p>
 					</div>
-					<div class="fixed radio panel">
+					<div class="fixed radiosign panel">
 						<h4><b>廣播 日本放送</b></h4>
 						<figure><img class="actionsImg" src="image/radio-xoxo.jpg" /></figure>
 						<p>日期：每週星期日</p>
@@ -9109,15 +9155,20 @@
 			</div>
 		</div>
 
-		<div class="footer-option"></div>
-		<a href="#top" class="anchor1 back-to" title="回上層"><b>回上層</b></a>
-		<p class="anchor2 back-to">
-			<span class="option-lr glyphicon glyphicon-triangle-left"></span>
-			<span id="datatimeNum">1</span><b>月</b>
-			<span class="option-lr glyphicon glyphicon-triangle-right"></span>
-			<span class="glyphicon glyphicon-search"></span>
-		</p>
-		<a href="https://garymomoindex.github.io/?visit=true" class="anchor3 back-to" title="回首頁"><b>回首頁</b></a>
+		<div class="footer-option">
+			<p class="anchor1 back-to"><a href="#top" title="回上層"><b>回上層</b></a></p>
+			<p class="anchor2 back-to">
+				<span class="option-lr glyphicon glyphicon-minus-sign"></span>
+				<span id="datatimeNum">1</span><b>月</b>
+				<span class="option-lr glyphicon glyphicon-plus-sign"></span>
+				<span class="glyphicon glyphicon-search"></span>
+			</p>
+			<p class="anchor3 back-to"><a href="https://garymomoindex.github.io/?visit=true" title="回首頁"><b>回首頁</b></a></p>
+
+			<figure>
+				<img src="image/general/icon/videoGear.png" title="收起">
+			</figure>
+		</div>
 
 		<footer>
 			<div class='momofoot'>
