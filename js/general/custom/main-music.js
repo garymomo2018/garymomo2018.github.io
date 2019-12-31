@@ -134,9 +134,15 @@
 			htmlIframeSrc = 'OHzmEuT6vDs';
 		} else if (chkId == 'adModala3') {
 			htmlIframeSrc = '2HaJgFB2TWw';
-		} else if (chkId == 'adModalb6') {
+		} else if (chkId == 'adModalb5-1' || chkId == 'adModalb6-1' || chkId == 'adModalb7-1' || chkId == 'adModalb9-1' || chkId == 'adModalb10-1') {
+			htmlIframeSrc = '0lLpABYn7eM';
+		} else if (chkId == 'adModalb5-2' || chkId == 'adModalb6-2' || chkId == 'adModalb7-2' || chkId == 'adModalb9-2' || chkId == 'adModalb10-2') {
+			htmlIframeSrc = 'tq8kf4EMJa8';
+		} else if (chkId == 'adModalb5-3' || chkId == 'adModalb6-3' || chkId == 'adModalb7-3' || chkId == 'adModalb9-3' || chkId == 'adModalb10-3') {
+			htmlIframeSrc = 'doiEBCVU1nw';
+		} else if (chkId == 'adModalb6-4') {
 			htmlIframeSrc = 'Rwo42POuMr8';
-		} else if (chkId == 'adModalb9') {
+		} else if (chkId == 'adModalb9-4') {
 			htmlIframeSrc = 'CHwbEBM7WVE';
 		} else if (chkId == 'adModala101') {
 			htmlIframeSrc = 'jXgdQVA2b-4';
@@ -153,26 +159,12 @@ $(window).on("load", function() {
 
 	$(".loader").hide();
 
-	var borderTL = new TimelineMax({ onComplete : nextMusicExtra });
+	var extraTL = new TimelineMax();
 
-	borderTL.to($(".music-extra-box"), 0.5, {
-		alpha : 0.5
-	})
-	.to($(".music-extra-box"), 0.8, {
-		alpha: 0, ease: Elastic.easeIn.config(1, 0.2)
-	}, "+=0.5")
-	.to($(".music-extra-box"), 0.3, {
-		alpha: 1
-	});
-
-	function nextMusicExtra() {
-		$(".music-extra-items").css("opacity", "1");
-		var extraTL = new TimelineMax();
-		extraTL.from($(".music-extra-title"), 1, { y: -200, autoAlpha: 0 })
-		.from($(".music-extra-audit"), 1, { x: 400, autoAlpha: 0 }, "-=1")
-		.from($(".music-extra-video"), 1, { scale: 0.1, autoAlpha: 0 }, "-=1")
-		.from($(".music-extra-detail"), 1, { x: -200, autoAlpha: 0 }, "-=1")
-		.from($(".music-extra-line-ext"), 0.3, { autoAlpha: 0 })
-		.from($(".music-extra-line"), 1, { autoAlpha: 0 });
-	}
+	extraTL.from($(".music-extra-title"), 1, { y: -200, autoAlpha: 0 })
+	.from($(".music-extra-audit"), 1, { x: 400, autoAlpha: 0 }, "-=1")
+	.from($(".music-extra-video"), 1, { scale: 0.1, autoAlpha: 0 }, "-=1")
+	.from($(".music-extra-detail"), 1, { x: -200, autoAlpha: 0 }, "-=1")
+	.from($(".music-extra-line-ext"), 0.3, { autoAlpha: 0 })
+	.from($(".music-extra-line"), 1, { autoAlpha: 0 });
 });
